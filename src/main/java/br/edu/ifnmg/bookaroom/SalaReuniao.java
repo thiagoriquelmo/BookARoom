@@ -11,13 +11,15 @@ package br.edu.ifnmg.bookaroom;
 public class SalaReuniao {
     private Integer numero;
     private Integer qtdLugares;
+    private Predio predio;
 
     public SalaReuniao() {
     }
 
-    public SalaReuniao(Integer numero, Integer qtdLugares) {
+    public SalaReuniao(Integer numero, Integer qtdLugares, Predio predio) {
         this.numero = numero;
         this.qtdLugares = qtdLugares;
+        this.predio = predio;
     }
 
     public Integer getNumero() {
@@ -38,7 +40,7 @@ public class SalaReuniao {
 
     @Override
     public String toString() {
-        return "SalaReuniao{" + "numero=" + numero + ", qtdLugares=" + qtdLugares + '}';
+        return "SalaReuniao{" + "numero=" + numero + ", qtdLugares=" + qtdLugares + ", predio=" + predio + '}';
     }
     
 }

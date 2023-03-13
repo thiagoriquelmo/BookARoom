@@ -12,14 +12,16 @@ public class Funcionario {
     private String nome;
     private String cargo;
     private Integer ramal;
+    private Campus campus;
 
     public Funcionario() {
     }
 
-    public Funcionario(String nome, String cargo, Integer ramal) {
+    public Funcionario(String nome, String cargo, Integer ramal, Campus campus) {
         this.nome = nome;
         this.cargo = cargo;
         this.ramal = ramal;
+        this.campus = campus;
     }
 
     public String getNome() {
@@ -46,9 +48,17 @@ public class Funcionario {
         this.ramal = ramal;
     }
 
+    public Campus getCampus() {
+        return campus;
+    }
+
+    public void setCampus(Campus campus) {
+        this.campus = campus;
+    }
+
     @Override
     public String toString() {
-        return "Funcionario{" + "nome=" + nome + ", cargo=" + cargo + ", ramal=" + ramal + '}';
+        return "Funcionario{" + "nome=" + nome + ", cargo=" + cargo + ", ramal=" + ramal + ", campus=" + campus + '}';
     }
         
 }
